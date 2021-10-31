@@ -19,6 +19,10 @@ export const SidebarHeaderIcon = styled.div`
   align-items: center;
   justify-content: space-between;
   min-width: 10vw;
-
 ` 
 
+export const SidebarChats = styled.div ` 
+  flex: 1;
+  background-color: white;
+  overflow-y: auto;
+` 
