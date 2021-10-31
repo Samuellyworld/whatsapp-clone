@@ -1,11 +1,26 @@
 import styled from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
-export const GlobalStyle = styled.div`
+export const GlobalStyle = createGlobalStyle`
+ body {
+    margin: 0;
+   padding: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+
+`
+
+
+
+export const AppStyles = styled.div`
  display : grid;
  place-items: center;
  height: 100vh;
  background-color: #dadbd3;
- 
 `
 
 export const MainContent  = styled.div`
