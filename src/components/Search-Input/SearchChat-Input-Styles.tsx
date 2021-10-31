@@ -15,9 +15,15 @@ export const SearchContainer = styled.div `
   height: 35px;
   border-radius: 20px;
 
+> .MuiSvgIcon-root {
+    color: gray;
+    padding : 10px;
+}
+> input {
+    border:  none;
+    margin-left: 10px;
+    outline-width: 0;
+
+}
+
 `
-export const SearchInput = styled.input` 
-  border : none;
-  margin-left: 10px;
-  outline-width: 0;
-` 
