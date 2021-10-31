@@ -1,5 +1,5 @@
 import * as  React from 'react';
-import {AppStyles, MainContent} from  './App-Style';
+import {AppStyles, MainContent} from  './App-Styles';
 import Chat from './components/Chat/Chat';
 import Sidebar from './components/Sidebar/Sidebar';
 
