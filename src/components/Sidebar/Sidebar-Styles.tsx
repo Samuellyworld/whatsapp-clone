@@ -19,6 +19,11 @@ export const SidebarHeaderIcon = styled.div`
   align-items: center;
   justify-content: space-between;
   min-width: 10vw;
+
+  > MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+  }
 ` 
 
 export const SidebarChats = styled.div ` 
