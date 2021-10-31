@@ -7,3 +7,10 @@ export const SidebarDiv = styled.div`
 
 ` 
 
+export const SidebarHeaderDiv = styled.div` 
+  
+` 
+
+export const SidebarHeaderIcon = styled.div` 
+
+` 
