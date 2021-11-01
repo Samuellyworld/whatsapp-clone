@@ -13,4 +13,4 @@ const SearchChatInput = () => (
 
 )
 
-export default SearchChatInput
+export default SearchChatInput;

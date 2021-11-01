@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { ChatDiv } from './Chat-Styles';
 
+import ChatHeader from './Chat-Header/Chat-Header';
+
 const Chat = () => (
    <ChatDiv>
-      <h1> Chat </h1>
+      <ChatHeader/>
    </ChatDiv>
    
 )

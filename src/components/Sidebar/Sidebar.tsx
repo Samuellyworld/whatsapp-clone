@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { SidebarDiv, SidebarHeaderDiv, SidebarHeaderIcon, SidebarChats} from './Sidebar-Styles';
 
-import SearchChatInput from '../Search-Input/SearchChat-Input';
-import SidebarChat from '../Sidebar-Chat/Sidebar-Chat';
+import SearchChatInput from './Search-Input/SearchChat-Input';
+import SidebarChat from './Sidebar-Chat/Sidebar-Chat';
 import RefreshIcon from '@material-ui/icons/DonutLarge';
 import { Avatar, IconButton } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 

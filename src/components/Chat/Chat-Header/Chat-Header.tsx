@@ -1,9 +1,9 @@
 import * as React from 'react'
-import {Avatar} from '@material-ui/core/Avatar';
-import {SearchOutlined} from '@material-ui/icons/SearchOutlined';
-import { IconButton } from '@material-ui/core/IconButton';
-import {AttachFile} from '@material-ui/icons/AttachFile';
-import {MoreVert} from '@material-ui/icons/MoreVert';
+
+import SearchOutlined from '@material-ui/icons/SearchOutlined';
+import { Avatar, IconButton } from '@material-ui/core/';
+import AttachFile from '@material-ui/icons/AttachFile';
+import MoreVert from '@material-ui/icons/MoreVert';
 
 import { ChatHeaderDiv, ChatHeaderInfo, ChatHeaderRight } from './Chat-Header-Styles';
 
