@@ -11,7 +11,7 @@ const ChatBody = () => (
              new Date().toUTCString()
             } 
            </span>
-           </p>
+       </p>
    </ChatBodyDiv>
 
 )
