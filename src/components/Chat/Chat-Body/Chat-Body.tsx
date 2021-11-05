@@ -3,7 +3,7 @@ import {ChatBodyDiv} from './Chat-Body-Styles';
 
 const ChatBody = () => (
    <ChatBodyDiv>
-       <p> 
+       <p className="chat__message"> 
           <span className='chat__name'>Aspirin</span>  
            This is the message
            <span className='chat__timestamp'> 
