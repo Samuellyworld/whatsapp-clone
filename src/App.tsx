@@ -1,10 +1,17 @@
-import  React,{useEffect} from 'react';
+import  React,{useEffect, useState} from 'react';
 import {AppStyles, MainContent} from  './App-Styles';
 import Chat from './components/Chat/Chat';
 import Sidebar from './components/Sidebar/Sidebar';
 import Pusher from 'pusher-js';
+import axios from './axios/axios';
 
-function App() {
+const App = () =>  {
+  const [messages, setMessages] = useState([])
+
+  useEffect(() => {
+   axios.get('/messages/sync')
+    .then(response => {setMessages(response.data)}  )
+  }, [])
 
   useEffect(() => {
     const pusher = new Pusher('a01164abd7f41e43817a', {
@@ -15,7 +22,10 @@ function App() {
     channel.bind('inserted', (data) => {
       alert(JSON.stringify(data));
     });
-  })
+  },[])
+
+   console.log(messages);
+   
   return (
      <AppStyles>
       <MainContent>
