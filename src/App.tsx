@@ -23,7 +23,13 @@ const App = () =>  {
       alert(JSON.stringify(newMessage));
       setMessages([...messages, newMessage])
     });
-  },[])
+
+    return () => {
+      channel.unbind_all()
+      channel.unsubscribe()
+    
+    }
+  },[messages])
 
    console.log(messages);
 
