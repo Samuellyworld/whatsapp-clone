@@ -11,7 +11,7 @@ const receiverStyles = css`
 `
 
 const getStyles = (props)=> {
-  return props.receiver ? receiverStyles : senderStyles
+  return props.message.received ? receiverStyles : senderStyles
 }
 
 
