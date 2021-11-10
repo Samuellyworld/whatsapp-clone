@@ -20,6 +20,7 @@ export const ChatInputForm = styled.form`
 
   > input {
       flex : 1;
+      outline-width: 0;
       border-radius: 30px;
       padding: 10px;
       border: none;

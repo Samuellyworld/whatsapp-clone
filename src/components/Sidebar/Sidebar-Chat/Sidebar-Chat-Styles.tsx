@@ -13,6 +13,7 @@ export const SidebarChatDiv = styled.div`
 
 export const SidebarChatInfo = styled.div` 
    margin-left: 16px;
+   margin-top : -13px;
    
  >  h2 {
      font-size : 16px;
