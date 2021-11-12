@@ -45,6 +45,7 @@ return (
         </SidebarHeaderDiv>
         <SearchChatInput/>
         <SidebarChats>
+          <SidebarChat addNewChat/>
            {
             rooms?.map(room => (
               <SidebarChat key={room.id}

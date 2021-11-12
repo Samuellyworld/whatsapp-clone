@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SidebarChatDiv = styled.div` 
   display : flex;
-  padding : 20px;
+  padding : 10px;
   border-bottom : 1px solid #f6f6f6;
 
   &:hover {
@@ -18,6 +18,13 @@ export const SidebarChatInfo = styled.div`
  >  h2 {
      font-size : 16px;
      margin-bottom: 8px;
+ }
+ > h3 {
+   cursor: pointer;
+
+   &:hover {
+     text-decoration: underline;
+   }
  }
 ` 
 
