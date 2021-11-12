@@ -8,30 +8,56 @@ import { Avatar, IconButton } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 
 import ChatIcon from '@material-ui/icons/Chat';
 
-const Sidebar =() => ( 
-    <SidebarDiv>
-      <SidebarHeaderDiv>
-       <Avatar src=""/>
-        <SidebarHeaderIcon>
-            <IconButton>
-             <RefreshIcon/>
-            </IconButton>
-            <IconButton>
-             <ChatIcon/>
-            </IconButton>  
-            <IconButton>
-             <MoreVertIcon/>
-            </IconButton>
-         </SidebarHeaderIcon>
-      </SidebarHeaderDiv>
-      <SearchChatInput/>
-      <SidebarChats>
-        <SidebarChat/>
-        <SidebarChat/>
-        <SidebarChat/>  
-      </SidebarChats>
-    </SidebarDiv>
+import {firestore}  from '../../firebase/firebase';
+
+const Sidebar =() => {
+const [rooms, setRooms] = React.useState<Array<any>>([])
+
+
+React.useEffect(() => {
+ firestore.collection('rooms').onSnapshot(snapshot =>  {
+   
+   setRooms(snapshot.docs.map(doc => ({
+     id : doc.id,
+     data : doc.data()
+   })
+   )
+   )}
+  )
+}, [])
+
+console.log(rooms, 'room');
+return (
+      <SidebarDiv>
+        <SidebarHeaderDiv>
+        <Avatar src=""/>
+          <SidebarHeaderIcon>
+              <IconButton>
+              <RefreshIcon/>
+              </IconButton>
+              <IconButton>
+              <ChatIcon/>
+              </IconButton>  
+              <IconButton>
+              <MoreVertIcon/>
+              </IconButton>
+          </SidebarHeaderIcon>
+        </SidebarHeaderDiv>
+        <SearchChatInput/>
+        <SidebarChats>
+           {
+            rooms?.map(room => (
+              <SidebarChat key={room.id}
+               id={room.id}
+               name={room.data.name}
+               />
+            ))
+           } 
+        </SidebarChats>
+      </SidebarDiv>
     
 )
+}
 
 export default Sidebar;
+

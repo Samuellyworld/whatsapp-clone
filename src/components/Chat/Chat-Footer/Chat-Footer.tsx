@@ -4,6 +4,7 @@ import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
 import { IconButton } from '@material-ui/core';
 import axios from '../../../axios/axios';
+import SendIcon from '@material-ui/icons/Send';
 
 
 import { ChatFooterDiv, ChatInputForm } from './Chat-Styles';
@@ -47,7 +48,10 @@ const ChatFooter = () => {
             Send a message
         </button>
      </ChatInputForm>
-      <MicIcon/>
+     {
+       text ?  <SendIcon onClick={sendMessage} /> :  <MicIcon/>
+     }
+     
   </ChatFooterDiv>
 
 );
