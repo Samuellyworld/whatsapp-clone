@@ -8,6 +8,7 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import SendIcon from '@material-ui/icons/Send';
 import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
+import {firestore} from '../../../firebase/firebase';
 
 
 const SidebarChat = ({...props}) => {
@@ -15,7 +16,13 @@ const SidebarChat = ({...props}) => {
     const [dropdown, setDropdown] = React.useState<boolean>(false);
     const [text, setText] = React.useState<string>("");
     const [pickerVisible, togglePicker] = React.useState<boolean>(false);
-  
+    
+    const sendNewChat = () => {
+       firestore.collection('rooms').add({
+           name: text
+       })
+       setText('')
+    }
     
  return  (
     
@@ -47,9 +54,9 @@ const SidebarChat = ({...props}) => {
                     onChange={e => setText(e.target.value)}
                     type='text'
                      placeholder='Add new chat' /> 
-                   <button></button>
+                   <button onClick={sendNewChat}></button>
                    {
-                    text ?  <SendIcon /> :  null
+                    text ?  <SendIcon onClick={sendNewChat} /> :  null
                     }
                  </form>
                 )
