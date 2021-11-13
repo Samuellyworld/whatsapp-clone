@@ -22,7 +22,7 @@ const SidebarChat = ({...props}) => {
         <SidebarChatDiv>
          {pickerVisible && (
                 <Picker
-                  pickerStyle={{ position: "absolute", bottom: "114px" }}
+                  pickerStyle={{ position: "absolute", bottom: "209px", zIndex: "1" }}
                   onEmojiClick={(e, emoji) => {
                       setText(text + emoji.emoji)
                       togglePicker(false)
@@ -43,10 +43,13 @@ const SidebarChat = ({...props}) => {
                     <InsertEmoticonIcon
                       onClick={() => togglePicker((pickerVisible) => !pickerVisible)}
                     />
-                   <input type='text' placeholder='Add new chat' /> 
+                   <input  value={text}
+                    onChange={e => setText(e.target.value)}
+                    type='text'
+                     placeholder='Add new chat' /> 
                    <button></button>
                    {
-                    text ?  <SendIcon /> :  <MicIcon/>
+                    text ?  <SendIcon /> :  null
                     }
                  </form>
                 )

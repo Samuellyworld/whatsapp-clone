@@ -40,6 +40,12 @@ export const SidebarChatInfo = styled.div`
   flex: 1;
   display: flex;
 
+  >.MuiSvgIcon-root {
+      padding: 7px;
+      color: gray;
+      cursor: pointer;
+  }
+
   > input {
       background-color: whitesmoke;
       flex : 1;
