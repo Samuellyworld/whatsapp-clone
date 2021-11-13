@@ -28,6 +28,7 @@ export const SidebarChatInfo = styled.div`
   }
 
    .up, .down {
+     cursor: pointer;
      display : flex;
       margin-left : 155px;
       color : gray;

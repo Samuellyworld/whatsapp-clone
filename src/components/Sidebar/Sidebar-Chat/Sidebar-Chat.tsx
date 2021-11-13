@@ -17,7 +17,8 @@ const SidebarChat = ({...props}) => {
         (<SidebarChatInfo >
         <h3 onClick={() => setDropdown(!dropdown)}>Add New Chat </h3>
          {
-            dropdown? (<ArrowDropDown className='up'/>) : (<ArrowRightRounded className='down'/>)
+            dropdown? (<ArrowDropDown onClick={() => setDropdown(!dropdown)} className='up'/>) 
+            : (<ArrowRightRounded onClick={() => setDropdown(!dropdown)} className='down'/>)
           }
         {
             dropdown? 
