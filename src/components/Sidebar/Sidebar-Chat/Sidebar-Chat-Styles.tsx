@@ -22,15 +22,18 @@ export const SidebarChatInfo = styled.div`
  > h3 {
    cursor: pointer;
 
-   .up, .down {
-      margin-left : 50px;
-      color : gray;
-      margin-top: 5px;
-   }
-
    &:hover {
      text-decoration: underline;
    }
   }
+
+   .up, .down {
+     display : flex;
+      margin-left : 155px;
+      color : gray;
+      margin-top: -40px;
+   }
+
+  
 ` 
 

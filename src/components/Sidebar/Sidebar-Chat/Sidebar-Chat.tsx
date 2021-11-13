@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { SidebarChatDiv, SidebarChatInfo } from './Sidebar-Chat-Styles';
 import { Avatar } from '@material-ui/core';
-import ArrowUpWard from '@material-ui/icons/ArrowUpward';
-import ArrowDropDown from '@material-ui/icons/ArrowDownward'
+import ArrowRightRounded from '@material-ui/icons/ArrowRightAltRounded';
+import ArrowDropDown from '@material-ui/icons/ArrowDropDownSharp'
 
 const SidebarChat = ({...props}) => {
 
@@ -15,11 +15,10 @@ const SidebarChat = ({...props}) => {
         {
         props.addNewChat?
         (<SidebarChatInfo >
-        <h3 onClick={() => setDropdown(!dropdown)}>Add New Chat
+        <h3 onClick={() => setDropdown(!dropdown)}>Add New Chat </h3>
          {
-            dropdown? (<ArrowUpWard className='up'/>) : (<ArrowDropDown className='down'/>)
+            dropdown? (<ArrowDropDown className='up'/>) : (<ArrowRightRounded className='down'/>)
           }
-        </h3>
         {
             dropdown? 
                (<input type='text' placeholder='Add new chat' />) : null
