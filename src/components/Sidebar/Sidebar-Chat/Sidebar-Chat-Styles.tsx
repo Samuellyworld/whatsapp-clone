@@ -35,6 +35,25 @@ export const SidebarChatInfo = styled.div`
       margin-top: -40px;
    }
 
+ >form {
+  
+  flex: 1;
+  display: flex;
+
+  > input {
+      background-color: whitesmoke;
+      flex : 1;
+      outline-width: 0;
+      border-radius: 30px;
+      padding: 10px;
+      border: none;
+  }
+
+  > button {
+      display : none;
+  }
+ 
+ }
   
 ` 
 

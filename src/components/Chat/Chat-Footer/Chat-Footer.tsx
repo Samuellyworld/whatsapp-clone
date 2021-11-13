@@ -36,9 +36,10 @@ const ChatFooter = () => {
                   }}
                 />
               )}
-      <IconButton>        
-       <InsertEmoticonIcon onClick={() => togglePicker((pickerVisible) => !pickerVisible)}/>
-      </IconButton>
+       <InsertEmoticonIcon
+        onClick={() => togglePicker((pickerVisible) => !pickerVisible)}
+        />
+      
       <ChatInputForm>
         <input value={text}
                onChange={e => setText(e.target.value)}

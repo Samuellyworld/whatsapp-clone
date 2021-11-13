@@ -10,6 +10,7 @@ export const ChatFooterDiv = styled.div`
   >.MuiSvgIcon-root {
       padding: 10px;
       color: gray;
+      cursor: pointer;
   }
 
 `
