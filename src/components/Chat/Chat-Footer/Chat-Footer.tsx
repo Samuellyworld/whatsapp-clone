@@ -10,8 +10,8 @@ import SendIcon from '@material-ui/icons/Send';
 import { ChatFooterDiv, ChatInputForm } from './Chat-Styles';
 
 const ChatFooter = () => {
-  const [text, setText] = useState("");
-  const [pickerVisible, togglePicker] = useState(false);
+  const [text, setText] = useState<string>("");
+  const [pickerVisible, togglePicker] = useState<boolean>(false);
 
 
   const sendMessage= async (e) => {
