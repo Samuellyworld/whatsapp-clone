@@ -15,7 +15,7 @@ const [rooms, setRooms] = React.useState<Array<any>>([])
 
 
 React.useEffect(() => {
- firestore.collection('rooms').onSnapshot(snapshot =>  {
+ const unsubscribe = firestore.collection('rooms').onSnapshot(snapshot =>  {
    
    setRooms(snapshot.docs.map(doc => ({
      id : doc.id,
@@ -24,6 +24,9 @@ React.useEffect(() => {
    )
    )}
   )
+  return () => {
+    unsubscribe()
+  }
 }, [])
 
 console.log(rooms, 'room');

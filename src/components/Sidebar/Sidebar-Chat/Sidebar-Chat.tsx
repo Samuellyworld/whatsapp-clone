@@ -10,6 +10,8 @@ import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
 import {firestore} from '../../../firebase/firebase';
 
+import {Link} from 'react-router-dom';
+
 
 const SidebarChat = ({...props}) => {
 
@@ -64,13 +66,15 @@ const SidebarChat = ({...props}) => {
         }
         </SidebarChatInfo>) :
         (
-        <SidebarChatDiv>
-            <Avatar/>
-            <SidebarChatInfo>
-            <h2>{props.name}</h2>
-            <p> Message lol okay</p>
-        </SidebarChatInfo>
-        </SidebarChatDiv>
+        <Link to={`/home/rooms/${props.id}`}>
+            <SidebarChatDiv>
+                <Avatar/>
+                <SidebarChatInfo>
+                <h2>{props.name}</h2>
+                <p> Message lol okay</p>
+            </SidebarChatInfo>
+            </SidebarChatDiv>
+        </Link>
         )
         }
         </SidebarChatDiv> 
