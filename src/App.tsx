@@ -12,19 +12,14 @@ const App = () =>  {
      <AppStyles>
       <MainContent>
        <Router>
-         <Switch>
-           <Route path='/home'>
-             <Sidebar/>
-             <Route exact path='/home/rooms/:roomId'>
+        <Sidebar/>
+         <Switch> 
+             <Route exact path='/rooms/:roomId'>
               <Chat/>
              </Route>
              <Route exact path='/home/rooms'>
               <Chat/>
              </Route>
-            </Route>
-            <Route path='/'>
-              <h1> Homescreen </h1>
-            </Route>
           </Switch>
        </Router>
       </MainContent>
