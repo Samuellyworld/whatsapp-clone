@@ -19,7 +19,8 @@ const SidebarChat = ({...props}) => {
     const [text, setText] = React.useState<string>("");
     const [pickerVisible, togglePicker] = React.useState<boolean>(false);
     
-    const sendNewChat = () => {
+    const sendNewChat = (e) => {
+         e.preventDefault()
        firestore.collection('rooms').add({
            name: text
        })
