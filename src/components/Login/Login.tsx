@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/whatsapp.svg';
+import img from '../../assets/Whats.png';
 import google from '../../assets/google.png';
 import Button from '@material-ui/core/Button';
 import { LoginDiv } from './Login-Styles';
