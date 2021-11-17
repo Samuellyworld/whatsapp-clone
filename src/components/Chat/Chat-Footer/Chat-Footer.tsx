@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
-import { IconButton } from '@material-ui/core';
 import axios from '../../../axios/axios';
 import SendIcon from '@material-ui/icons/Send';
 

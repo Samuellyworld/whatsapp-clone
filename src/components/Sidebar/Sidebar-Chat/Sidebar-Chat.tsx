@@ -6,7 +6,6 @@ import ArrowRightRounded from '@material-ui/icons/ArrowRightAltRounded';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDownSharp'
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import SendIcon from '@material-ui/icons/Send';
-import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
 import {firestore} from '../../../firebase/firebase';
 
