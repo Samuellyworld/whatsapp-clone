@@ -4,12 +4,13 @@ import Chat from './components/Chat/Chat';
 import Sidebar from './components/Sidebar/Sidebar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './components/Login/Login';
+import { useStateValue } from './providers/user/user-provider';
 
 // import { auth, createUserProfileDocument } from './firebase/firebase';
 
 
 const App = () =>  {
- const [user, setUser] = React.useState<Array<string> | null>(null);
+  const [{user}] = useStateValue()
    
 //   React.useEffect(() => {
  
