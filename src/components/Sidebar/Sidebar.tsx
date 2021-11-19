@@ -9,9 +9,11 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import ChatIcon from '@material-ui/icons/Chat';
 
 import {firestore}  from '../../firebase/firebase';
+import {useStateValue} from '../../providers/user/user-provider';
 
 const Sidebar =() => {
 const [rooms, setRooms] = React.useState<Array<any>>([])
+const [{user}, dispatch] = useStateValue();
 
 
 React.useEffect(() => {
@@ -30,10 +32,11 @@ React.useEffect(() => {
 }, [])
 
 console.log(rooms, 'room');
+console.log(user.photoURL, 'user');
 return (
       <SidebarDiv>
         <SidebarHeaderDiv>
-        <Avatar src=""/>
+        <Avatar src={user?.photoURL}/>
           <SidebarHeaderIcon>
               <IconButton>
               <RefreshIcon/>
