@@ -16,7 +16,7 @@ const Chat = () => {
 
    const [roomName, setRoomName] = useState('')
    const [messages, setMessages] = useState<Array<string>>([])
-   console.log(roomId)
+   console.log(roomId, 'roomid')
 
    useEffect(() => {
    
@@ -27,6 +27,8 @@ const Chat = () => {
 
       }
    }, [roomId])
+
+   console.log(roomName, 'roomname');
 
    useEffect(() => {
     axios.get('/messages/sync')

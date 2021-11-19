@@ -26,18 +26,19 @@ const App = () =>  {
             <Router>
              <Sidebar/>
              <Switch> 
-                 <Route exact path='/rooms/:roomId'>
+                 <Route exact path='/home/rooms/:roomId'>
                   <Chat/>
                  </Route>
-                 <Route exact path='/home/rooms'>
+                 <Route exact path='/home/rooms/'>
                   <Chat/>
                  </Route>
               </Switch>
              </Router>
 
            )
+}
 
-        }
+        
      
       </MainContent>
     </AppStyles>

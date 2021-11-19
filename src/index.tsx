@@ -9,9 +9,8 @@ import { StateProvider } from './providers/user/user-provider';
 
 ReactDOM.render(
   <React.StrictMode>
-   
-    <GlobalStyle/>
-    <StateProvider initialState={initialState} reducer={reducer}>
+   <StateProvider initialState={initialState} reducer={reducer}>
+     <GlobalStyle/>
       <App />
     </StateProvider>
   </React.StrictMode>,

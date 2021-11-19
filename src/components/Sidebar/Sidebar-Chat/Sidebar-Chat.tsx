@@ -26,6 +26,7 @@ const SidebarChat = ({...props}) => {
        setText('')
     }
     
+    console.log(props.id, 'roomid');
  return  (
     
         <SidebarChatDiv>
