@@ -6,11 +6,12 @@ import { LoginDiv } from './Login-Styles';
 import {auth, provider} from '../../firebase/firebase';
 import { useStateValue } from '../../providers/user/user-provider';
 import { actionTypes } from '../../providers/user/user-reducer';
+import axios from '../../axios/axios';
 
 const Login = () => {
    let [{}, dispatch] = useStateValue()
 
-    const signIn = () => {
+    const signIn = ()=> {
 
         auth.signInWithPopup(provider)
          .then(result => {
@@ -18,7 +19,10 @@ const Login = () => {
              type : actionTypes.SET_USER,
              user : result.user
            })
-          console.log(result)
+            axios.post('/users', {
+              users : result.user
+            }) 
+          console.log(result.user, 'result')
         })
         .catch(err => {
           
