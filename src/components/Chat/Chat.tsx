@@ -15,7 +15,7 @@ const Chat = () => {
     const {roomId} = useParams();
 
    const [roomName, setRoomName] = useState('')
-   const [messages, setMessages] = useState<Array<string>>([])
+   const [messages, setMessages] = useState<Array<any>>([])
    console.log(roomId, 'roomid')
 
    useEffect(() => {
@@ -24,33 +24,37 @@ const Chat = () => {
          firestore.collection("rooms").doc(roomId).onSnapshot((snapshot) => 
               setRoomName(snapshot?.data()?.name)    
            )
-
+        firestore.collection("rooms").doc(roomId).collection("messages")
+        .orderBy('timeStamp', 'asc').onSnapshot(snapshot => (
+          setMessages(snapshot.docs.map(doc => doc.data()))
+        ))
       }
+
    }, [roomId])
 
    console.log(roomName, 'roomname');
 
-   useEffect(() => {
-    axios.get('/messages/sync')
-     .then(response => {setMessages(response.data)}  )
-   }, [])
+  //  useEffect(() => {
+  //   axios.get('/messages/sync')
+  //    .then(response => {setMessages(response.data)}  )
+  //  }, [])
  
-   useEffect(() => {
-     const pusher = new Pusher('a01164abd7f41e43817a', {
-       cluster: 'us3'
-     });
+  //  useEffect(() => {
+  //    const pusher = new Pusher('a01164abd7f41e43817a', {
+  //      cluster: 'us3'
+  //    });
  
-     const channel = pusher.subscribe('messages');
-     channel.bind('inserted', (newMessage) => {
-       setMessages([...messages, newMessage])
-     });
+  //    const channel = pusher.subscribe('messages');
+  //    channel.bind('inserted', (newMessage) => {
+  //      setMessages([...messages, newMessage])
+  //    });
  
-     return () => {
-       channel.unbind_all()
-       channel.unsubscribe()
+  //    return () => {
+  //      channel.unbind_all()
+  //      channel.unsubscribe()
      
-     }
-   },[messages])
+  //    }
+  //  },[messages])
  
     console.log(messages);
 

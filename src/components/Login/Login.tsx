@@ -20,7 +20,9 @@ const Login = () => {
              user : result.user
            })
             axios.post('/users', {
-              users : result.user
+              users: {
+                additionalData : result.user
+              } 
             }) 
           console.log(result.user, 'result')
         })

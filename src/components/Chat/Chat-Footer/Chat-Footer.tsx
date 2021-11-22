@@ -16,10 +16,10 @@ const ChatFooter = () => {
   const sendMessage= async (e) => {
     e.preventDefault()
    await  axios.post('/messages/new', {
-            message : text,
-            name : "Dominic",
-          timeStamp : "workin..hh",
-          received : false
+           users : {
+               message : text
+           }
+            
           })
     setText('')
 

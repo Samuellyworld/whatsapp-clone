@@ -9,7 +9,7 @@ return (
     {props.message.message}
        <span className='chat__timestamp'> 
        {
-       new Date().toUTCString()
+       new Date(props.message.timeStamp?.toDate()).toUTCString()
        } 
      </span>
  </ChatParagraph>
