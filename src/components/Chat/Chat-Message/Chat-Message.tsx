@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { ChatParagraph } from './Chat-Message-Styles';
+import {useStateValue} from '../../../providers/user/user-provider';
 
 const ChatMessage = ({...props}) => {
-  
+  const [{user}, dispatch] = useStateValue()
 return (
- <ChatParagraph {...props}> 
+ <ChatParagraph {...props} user={user}> 
       <span className='chat__name'>{props.message.name}</span>  
     {props.message.message}
        <span className='chat__timestamp'> 
