@@ -15,7 +15,12 @@ const ChatHeader = ({...props}) => (
           <h3>{props.roomName}</h3>
           <p> 
             {
-              props.roomName === "faozan😉" ? 'online' : "Last seen at"
+              props.roomName === "faozan😉" ? 'online' : `Last seen ${
+                  new Date(
+                      props.messages[props.messages.length -1]?.
+                      timeStamp?.toDate()).toUTCString()
+                  
+              }`
             } 
           </p>
       </ChatHeaderInfo>
