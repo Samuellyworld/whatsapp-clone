@@ -13,7 +13,11 @@ const ChatHeader = ({...props}) => (
         <Avatar/>
       <ChatHeaderInfo>
           <h3>{props.roomName}</h3>
-          <p> Last seen at </p>
+          <p> 
+            {
+              props.roomName === "faozan😉" ? 'online' : "Last seen at"
+            } 
+          </p>
       </ChatHeaderInfo>
       <ChatHeaderRight>
           <IconButton>
