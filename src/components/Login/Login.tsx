@@ -12,7 +12,7 @@ const Login = () => {
    let [{}, dispatch] = useStateValue()
 
     const signIn = ()=> {
-
+      
         auth.signInWithPopup(provider)
          .then(result => {
            dispatch({

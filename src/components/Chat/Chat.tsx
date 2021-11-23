@@ -14,7 +14,7 @@ import Pusher from 'pusher-js';
 const Chat = () => {
     const {roomId} = useParams();
 
-   const [roomName, setRoomName] = useState('')
+   const [roomName, setRoomName] = useState<string>('')
    const [messages, setMessages] = useState<Array<any>>([])
    console.log(roomId, 'roomid')
 
