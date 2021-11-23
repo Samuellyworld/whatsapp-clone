@@ -8,8 +8,8 @@ import { useParams } from 'react-router-dom';
 import {firestore} from '../../firebase/firebase';
 
 
-import axios from '../../axios/axios';
-import Pusher from 'pusher-js';
+// import axios from '../../axios/axios';
+// import Pusher from 'pusher-js';
 
 const Chat = () => {
     const {roomId} = useParams();
@@ -60,7 +60,7 @@ const Chat = () => {
 
   return (
    <ChatDiv>
-    <ChatHeader roomName={roomName}/>
+    <ChatHeader roomName={roomName} messages={messages} />
     <MessageContext.Provider value={messages}>
       <ChatBody/>
     </MessageContext.Provider>

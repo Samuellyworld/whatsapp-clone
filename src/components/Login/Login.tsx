@@ -6,7 +6,7 @@ import { LoginDiv } from './Login-Styles';
 import {auth, provider} from '../../firebase/firebase';
 import { useStateValue } from '../../providers/user/user-provider';
 import { actionTypes } from '../../providers/user/user-reducer';
-import axios from '../../axios/axios';
+// import axios from '../../axios/axios';
 
 const Login = () => {
    let [{}, dispatch] = useStateValue()
@@ -19,11 +19,11 @@ const Login = () => {
              type : actionTypes.SET_USER,
              user : result.user
            })
-            axios.post('/users', {
-              users: {
-                additionalData : result.user
-              } 
-            }) 
+            // axios.post('/users', {
+            //   users: {
+            //     additionalData : result.user
+            //   } 
+            // }) 
           console.log(result.user, 'result')
         })
         .catch(err => {
