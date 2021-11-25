@@ -13,7 +13,7 @@ import {useStateValue} from '../../providers/user/user-provider';
 
 const Sidebar =() => {
 const [rooms, setRooms] = React.useState<Array<any>>([])
-const [{user}, dispatch] = useStateValue();
+const [{user}] = useStateValue();
 
 
 React.useEffect(() => {

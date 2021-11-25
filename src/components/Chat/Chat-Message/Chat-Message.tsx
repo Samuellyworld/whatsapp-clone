@@ -3,7 +3,7 @@ import { ChatParagraph } from './Chat-Message-Styles';
 import {useStateValue} from '../../../providers/user/user-provider';
 
 const ChatMessage = ({...props}) => {
-  const [{user}, dispatch] = useStateValue()
+  const [{user}] = useStateValue()
 return (
  <ChatParagraph {...props} user={user}> 
       <span className='chat__name'>{props.message.name}</span>  
