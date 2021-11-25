@@ -30,7 +30,7 @@ const App = () =>  {
                  <Route exact path='/home/rooms/:roomId'>
                   <Chat/>
                  </Route>
-                 <Route exact path='/home/rooms/'>
+                 <Route path='/home/rooms/'>
                   <Home/>
                  </Route>
               </Switch>

@@ -5,7 +5,7 @@ import introImgLight from '../../assets/home_intro.jpg';
 const Home =() => {
    return (
      <HomeDiv> 
-       <div className="home__img-wrapper">
+       <div className="home__img">
 				<img
 					src={introImgLight}
 					alt="home_page"
