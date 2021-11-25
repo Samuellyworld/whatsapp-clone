@@ -13,6 +13,7 @@ import {useStateValue} from '../../providers/user/user-provider';
 
 const Sidebar =() => {
 const [rooms, setRooms] = React.useState<Array<any>>([])
+const [searchfield, setSearchfield] = React.useState('')
 const [{user}] = useStateValue();
 
 
@@ -30,6 +31,14 @@ React.useEffect(() => {
     unsubscribe()
   }
 }, [])
+
+const onSearchChatChange = e => {
+  setSearchfield(e.target.value)
+}
+
+const filteredChatRoom = rooms.filter(room => {
+  return room.data.name.toLowerCase().includes(searchfield.toLowerCase())
+})
 
 console.log(rooms, 'room');
 console.log(user.photoURL, 'user');
@@ -49,11 +58,11 @@ return (
               </IconButton>
           </SidebarHeaderIcon>
         </SidebarHeaderDiv>
-        <SearchChatInput/>
+        <SearchChatInput searchChange={onSearchChatChange}/>
         <SidebarChats>
           <SidebarChat addNewChat/>
            {
-            rooms?.map(room => (
+            filteredChatRoom?.map(room => (
               <SidebarChat key={room.id}
                id={room.id}
                name={room.data.name}
