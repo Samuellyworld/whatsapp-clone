@@ -17,6 +17,17 @@ const SidebarChat = ({...props}) => {
     const [dropdown, setDropdown] = React.useState<boolean>(false);
     const [text, setText] = React.useState<string>("");
     const [pickerVisible, togglePicker] = React.useState<boolean>(false);
+    const [message, setMessage] = React.useState<any>([]);
+
+    React.useEffect(()=> {
+      if(props.id) {
+        firestore.collection('rooms').doc(props.id)
+        .collection('messages').orderBy('timeStamp', 'desc').
+        onSnapshot(snapshot => (
+           setMessage(snapshot.docs.map(doc => 
+            doc.data()))))
+      }
+    }, [])
     
     const sendNewChat = (e) => {
          e.preventDefault()
@@ -72,7 +83,7 @@ const SidebarChat = ({...props}) => {
                 <Avatar/>
                 <SidebarChatInfo>
                 <h2>{props.name}</h2>
-                <p> Message lol okay</p>
+                <p>{message[0]?.message}</p>
             </SidebarChatInfo>
             </SidebarChatDiv>
         </Link>
