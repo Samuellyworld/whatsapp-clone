@@ -9,6 +9,11 @@ export const SidebarChatDiv = styled.div`
       background-color: #ebebeb;
   }
 
+  a {
+    text-decoration : none !important;
+    color: black;
+  }
+
 ` 
 
 export const SidebarChatInfo = styled.div` 
