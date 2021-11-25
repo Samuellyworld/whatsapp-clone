@@ -7,6 +7,7 @@ import RefreshIcon from '@material-ui/icons/DonutLarge';
 import { Avatar, IconButton } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 
 import ChatIcon from '@material-ui/icons/Chat';
+import Options from '../Option-Dropdown/Options';
 
 import {firestore}  from '../../firebase/firebase';
 import {useStateValue} from '../../providers/user/user-provider';
@@ -56,8 +57,11 @@ return (
               <IconButton>
               <MoreVertIcon/>
               </IconButton>
+              <Options/> 
           </SidebarHeaderIcon>
+         
         </SidebarHeaderDiv>
+    
         <SearchChatInput searchChange={onSearchChatChange}/>
         <SidebarChats>
           <SidebarChat addNewChat/>
