@@ -9,9 +9,14 @@ const Home =() => {
 				<img
 					src={introImgLight}
 					alt="home_page"
-					className="home__img"
+					className="__img"
 				/>
 		</div>
+        <h1 className="home__title"> Keep your phone connected </h1>
+		<p className="home__text">
+				WhatsApp connects to your phone to sync messages. To reduce data usage,
+				connect your phone to Wi-Fi.
+		</p>
      </HomeDiv>
    );
 
