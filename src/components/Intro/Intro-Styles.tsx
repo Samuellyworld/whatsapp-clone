@@ -37,5 +37,10 @@ export const HomeDiv = styled.div`
     display: flex;
     align-items: center;
 }
+
+.home__text:first-of-type {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.08);
+}
   
 ` 
