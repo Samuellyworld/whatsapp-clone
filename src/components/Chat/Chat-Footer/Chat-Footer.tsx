@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import Picker from 'emoji-picker-react';
-import axios from '../../../axios/axios';
+// import axios from '../../../axios/axios';
 import SendIcon from '@material-ui/icons/Send';
 import { useParams } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
@@ -16,7 +16,7 @@ const ChatFooter = () => {
    const {roomId} = useParams();
   const [text, setText] = useState<string>("");
   const [pickerVisible, togglePicker] = useState<boolean>(false);
-  const [{user}, dispatch] = useStateValue()
+  const [{user}] = useStateValue()
 
   const sendMessage= async (e) => {
     e.preventDefault()
