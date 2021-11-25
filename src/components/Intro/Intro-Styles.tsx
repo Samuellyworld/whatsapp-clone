@@ -8,7 +8,6 @@ export const HomeDiv = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 6px solid rgb(6, 215, 85);
 
   .home__img {
     width: 250px;
