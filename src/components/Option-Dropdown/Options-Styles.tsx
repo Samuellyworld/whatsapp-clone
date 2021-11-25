@@ -8,12 +8,20 @@ export const OptionsDiv = styled.div`
     height: 100px;
     background-color: white;
     border-radius: 3px;
-    box-shadow: 0 2px 5px 0 #00000042, 0 2px 10px 0 rgba(0, 0, 0, .16);
-    
+    box-shadow: 0 2px 5px 0 #00000042, 0 2px 10px 0 rgba(0, 0, 0, .16);  
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 21px 0;
+
+    li {
+    padding: 10px 0px;
+    margin-right: 16px;
+    list-style: none;
+    color: #000000;
+    font-size: 0.9rem;
+    cursor: pointer;
+    }
 
     ` 

@@ -7,7 +7,7 @@ const Options = () => {
          <ul>
              <li>Profile</li>
              <li>Dark mode</li>
-             <li> Log out</li>
+             <li> Log Out</li>
          </ul>
         </OptionsDiv>
     );
