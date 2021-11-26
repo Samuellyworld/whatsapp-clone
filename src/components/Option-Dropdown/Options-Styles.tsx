@@ -30,7 +30,56 @@ export const OptionsDiv = styled.div`
         &:hover {
             background: #f5f5f5;
         }
+        
+        .theme-switch {
+         display: inline-block;
+         height: 34px;
+         position: relative;
+         width: 60px;
+
+         input {
+             display: none;
+         }
+
+        .slider {
+             background: #ccc;
+             content: "🌘";
+             bottom: 0;
+             cursor: pointer;
+             left: 0;
+             position: absolute;
+             right: 0;
+             top: 0;
+             transition: 0.4s;
+
+           &::before {
+            background: #fff;
+            bottom: 4px;
+            content: "☀️";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: 0.4s;
+            width: 24px;
+            }
+            }
+
+        input:checked + .slider {
+          background: grey;
+           }
+        input:checked + .slider::before {
+            transform: translateX(26px);
         }
+       .slider.round {
+         border-radius: 34px;
+    }
+
+     .slider.round::before {
+       border-radius: 50%;
+   }
+        }
+
+    }
 
 
     }
