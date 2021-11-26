@@ -35,7 +35,10 @@ export const OptionsDiv = styled.div`
          display: inline-block;
          height: 34px;
          position: relative;
-         width: 60px;
+         width: 44px;
+         margin-top: -25px;
+         margin-bottom : 12px;
+         margin-left: 74px;
 
          input {
              display: none;
@@ -44,23 +47,23 @@ export const OptionsDiv = styled.div`
         .slider {
              background: #ccc;
              content: "🌘";
-             bottom: 0;
+             bottom: 4px;
              cursor: pointer;
-             left: 0;
+             left: 0px;
              position: absolute;
-             right: 0;
-             top: 0;
+             right: 0px;
+             top: 6px;
              transition: 0.4s;
 
            &::before {
             background: #fff;
-            bottom: 4px;
+            bottom: 2px;
             content: "☀️";
-            height: 26px;
-            left: 4px;
+            height: 20px;
+            left: 3px;
             position: absolute;
             transition: 0.4s;
-            width: 24px;
+            width: 20px;
             }
             }
 
@@ -68,7 +71,7 @@ export const OptionsDiv = styled.div`
           background: grey;
            }
         input:checked + .slider::before {
-            transform: translateX(26px);
+            transform: translateX(19px);
         }
        .slider.round {
          border-radius: 34px;
