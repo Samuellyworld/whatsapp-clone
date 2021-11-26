@@ -15,7 +15,7 @@ import {useStateValue} from '../../providers/user/user-provider';
 
 const Sidebar =() => {
 const [rooms, setRooms] = React.useState<Array<any>>([])
-const [searchfield, setSearchfield] = React.useState('')
+const [searchfield, setSearchfield] = React.useState<string>('')
 const [{user}] = useStateValue();
 const [hidden, togglehidden] = React.useState<boolean>(false);
 
