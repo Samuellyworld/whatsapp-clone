@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SidebarDiv, SidebarHeaderDiv, SidebarHeaderIcon, SidebarChats} from './Sidebar-Styles';
 
+
 import SearchChatInput from './Search-Input/SearchChat-Input';
 import SidebarChat from './Sidebar-Chat/Sidebar-Chat';
 import RefreshIcon from '@material-ui/icons/DonutLarge';
@@ -16,7 +17,7 @@ const Sidebar =() => {
 const [rooms, setRooms] = React.useState<Array<any>>([])
 const [searchfield, setSearchfield] = React.useState('')
 const [{user}] = useStateValue();
-
+const [hidden, togglehidden] = React.useState<boolean>(false);
 
 React.useEffect(() => {
  const unsubscribe = firestore.collection('rooms').onSnapshot(snapshot =>  {
@@ -54,10 +55,11 @@ return (
               <IconButton>
               <ChatIcon/>
               </IconButton>  
-              <IconButton>
-              <MoreVertIcon/>
+              <IconButton onClick={() => togglehidden(!hidden)}>
+              <MoreVertIcon />
               </IconButton>
-              <Options/> 
+             {hidden ? (<Options/>) : null  }
+              
           </SidebarHeaderIcon>
          
         </SidebarHeaderDiv>
