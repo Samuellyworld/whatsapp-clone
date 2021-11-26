@@ -30,6 +30,9 @@ export const OptionsDiv = styled.div`
         &:hover {
             background: #f5f5f5;
         }
+        &:last-child {
+            margin-top: -26px;
+        }
         
         .theme-switch {
          display: inline-block;
@@ -39,6 +42,7 @@ export const OptionsDiv = styled.div`
          margin-top: -25px;
          margin-bottom : 12px;
          margin-left: 74px;
+         z-index: 2;
 
          input {
              display: none;
