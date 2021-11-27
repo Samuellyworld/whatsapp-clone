@@ -25,7 +25,7 @@ const Options = () => {
         }
     }
 
-    const getThemeNameOnLoad: any = localStorage.getItem('theme') 
+    const getThemeNameOnLoad: any = document.body.getAttribute("class");
 
  
 
