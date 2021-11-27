@@ -2,6 +2,14 @@ import styled from 'styled-components';
 import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+
+.dark {
+    --bg-body :  rgb(38, 45, 49);
+}
+.light {
+    --bg-body:  #f8f9fa;
+}
+
  body {
     margin: 0;
    padding: 0;

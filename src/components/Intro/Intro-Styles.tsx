@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
+
 export const HomeDiv = styled.div` 
-    background: #f8f9fa;
+
+
+
+    background: var(--bg-body);
     flex: 0.65;
     display: flex;
     flex-direction: column;
@@ -41,5 +45,16 @@ export const HomeDiv = styled.div`
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(74, 74, 74, 0.08);
 }
+
+/* .dark .home{
+    background: rgb(38, 45, 49);
+    border-bottom-color: #056162; */
+
+
+/* .dark .home__title {
+    color: rgba(241, 241, 242, 0.88);
+} */
+
+
   
 ` 
