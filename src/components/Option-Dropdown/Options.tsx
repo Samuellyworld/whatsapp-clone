@@ -3,18 +3,18 @@ import {OptionsDiv} from './Options-Styles';
 
 const Options = () => {
 
-    const[mode, setMode] = React.useState("")
+    const[themeModeName, setThemeModeName] = React.useState("")
     
  const switchTheme = (event) => {
     if(event.target.checked) {
             document.body.setAttribute('class', 'dark');
             localStorage.setItem('theme', 'dark');
-            setMode('Dark mode')
+            setThemeModeName('Dark Mode')
 
         } else {
             document.body.setAttribute('class', 'light');
             localStorage.setItem('theme', 'light')
-            setMode("Light Mode")
+            setThemeModeName("Light Mode")
         }
     }
 
@@ -27,7 +27,7 @@ const Options = () => {
          <ul>
              <li>Profile</li>
              <li>
-                {  mode || getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)}
+                {  themeModeName ||  ` ${getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)} Mode  ` }
                 <label className='theme-switch'>
                  <input type="checkbox" onChange={switchTheme}/>
                  <div className='slider round'></div>
