@@ -4,12 +4,14 @@ import introImgLight from '../../assets/home_intro.jpg';
 import introImgDark from '../../assets/intro-connection-dark.jpg';
 
 const Home =({...props}) => {
-    console.log(props.mode)
+
+
    return (
      <HomeDiv> 
        <div className="home__img">
 				<img
-					src={props.mode ? introImgDark : introImgLight}
+                    id="image"
+					src={props.storedTheme==='dark' ? introImgDark : introImgLight}
 					alt="home_page"
 					className="__img"
 				/>
