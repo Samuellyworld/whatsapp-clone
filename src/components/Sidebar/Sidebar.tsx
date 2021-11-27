@@ -50,13 +50,13 @@ return (
         <Avatar src={user?.photoURL}/>
           <SidebarHeaderIcon>
               <IconButton>
-              <RefreshIcon/>
+              <RefreshIcon style={{ color: 'grey' }}/>
               </IconButton>
               <IconButton>
-              <ChatIcon/>
+              <ChatIcon style={{ color: 'grey' }}/>
               </IconButton>  
               <IconButton onClick={() => togglehidden(!hidden)}>
-              <MoreVertIcon />
+              <MoreVertIcon style={{ color: 'grey' }}/>
               </IconButton>
              {hidden ? (<Options/>) : null  }
               

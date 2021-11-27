@@ -27,13 +27,13 @@ const ChatHeader = ({...props}) => (
       </ChatHeaderInfo>
       <ChatHeaderRight>
           <IconButton>
-              <SearchOutlined/>
+              <SearchOutlined style={{ color: 'grey' }}/>
           </IconButton>
           <IconButton>
-              <AttachFile/>
+              <AttachFile style={{ color: 'grey' }}/>
           </IconButton>
           <IconButton>
-              <MoreVert/>
+              <MoreVert style={{ color: 'grey' }}/>
           </IconButton>
       </ChatHeaderRight>
     </ChatHeaderDiv>
