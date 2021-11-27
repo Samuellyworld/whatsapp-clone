@@ -1,13 +1,15 @@
 import * as React from 'react';
 import {HomeDiv} from './Intro-Styles';
 import introImgLight from '../../assets/home_intro.jpg';
+import introImgDark from '../../assets/intro-connection-dark.jpg';
 
-const Home =() => {
+const Home =({...props}) => {
+    console.log(props.mode)
    return (
      <HomeDiv> 
        <div className="home__img">
 				<img
-					src={introImgLight}
+					src={props.mode ? introImgDark : introImgLight}
 					alt="home_page"
 					className="__img"
 				/>

@@ -12,10 +12,17 @@ import { useStateValue } from './providers/user/user-provider';
 
 const App = () =>  {
   const [{user}] = useStateValue()
-   
-//   React.useEffect(() => {
- 
-//  })
+
+  const storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)")
+               .matches ? "dark" : "light")
+
+     React.useEffect(() => {
+      if (storedTheme) {
+        document.body.setAttribute('class', storedTheme)
+    }
+},[storedTheme])
+
+console.log(storedTheme);
 
 
   return (
@@ -31,7 +38,7 @@ const App = () =>  {
                   <Chat/>
                  </Route>
                  <Route path='/home/rooms/'>
-                  <Home/>
+                  <Home />
                  </Route>
               </Switch>
              </Router>
