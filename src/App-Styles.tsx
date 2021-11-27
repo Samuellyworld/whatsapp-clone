@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-text : rgb(166, 168, 170);
     --home-title :  rgba(241, 241, 242, 0.88);
     --home-text-border : rgba(241, 241, 242, 0.11);
+ 
 }
 .light {
     --home-bg-body:  #f8f9fa;
@@ -39,7 +40,7 @@ export const AppStyles = styled.div`
 
 export const MainContent  = styled.div`
  display : flex;
- background-color: #ededed;
+ background-color: var(--home-bg-body);
  margin-top: -50px;
  height : 90vh;
  width: 90vw;

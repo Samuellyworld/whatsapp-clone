@@ -14,13 +14,13 @@ const Options = () => {
             document.body.setAttribute('class', 'dark');
             localStorage.setItem('theme', 'dark');
             // Notice the "!" at the end of line
-            document.getElementById("image")!.setAttribute('src', introImgDark)
+            document?.getElementById("image")!?.setAttribute('src', introImgDark)
             setThemeModeName('Dark Mode')
 
         } else {
             document.body.setAttribute('class', 'light');
             localStorage.setItem('theme', 'light')
-            document.getElementById("image")!.setAttribute('src', introImgLight)
+            document?.getElementById("image")!?.setAttribute('src', introImgLight)
             setThemeModeName("Light Mode")
         }
     }
