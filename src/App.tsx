@@ -25,6 +25,8 @@ const App = () =>  {
 
 
 
+
+
   return (
      <AppStyles>
       <MainContent>
@@ -37,7 +39,7 @@ const App = () =>  {
                  <Route exact path='/home/rooms/:roomId'>
                   <Chat/>
                  </Route>
-                 <Route path='/home/rooms/'>
+                 <Route path='/'>
                   <Home/>
                  </Route>
               </Switch>

@@ -2,10 +2,7 @@ import styled from 'styled-components';
 
 
 export const HomeDiv = styled.div` 
-
-
-
-    background: var(--bg-body);
+    background: var(--home-bg-body);
     flex: 0.65;
     display: flex;
     flex-direction: column;

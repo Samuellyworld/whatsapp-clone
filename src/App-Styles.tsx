@@ -4,10 +4,10 @@ import {createGlobalStyle} from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
 .dark {
-    --bg-body :  rgb(38, 45, 49);
+    --home-bg-body :  rgb(38, 45, 49);
 }
 .light {
-    --bg-body:  #f8f9fa;
+    --home-bg-body:  #f8f9fa;
 }
 
  body {
