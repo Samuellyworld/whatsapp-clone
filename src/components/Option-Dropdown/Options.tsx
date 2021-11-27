@@ -18,7 +18,7 @@ const Options = () => {
         }
     }
 
-    const getThemeNameOnLoad = localStorage.getItem('theme') 
+    const getThemeNameOnLoad: any = localStorage.getItem('theme') 
 
  
 
@@ -27,7 +27,7 @@ const Options = () => {
          <ul>
              <li>Profile</li>
              <li>
-                {  mode || getThemeNameOnLoad }
+                {  mode || getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)}
                 <label className='theme-switch'>
                  <input type="checkbox" onChange={switchTheme}/>
                  <div className='slider round'></div>
