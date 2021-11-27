@@ -3,15 +3,14 @@ import {HomeDiv} from './Intro-Styles';
 import introImgLight from '../../assets/home_intro.jpg';
 import introImgDark from '../../assets/intro-connection-dark.jpg';
 
-const Home =({...props}) => {
-
-
+const Home =() => {
+ const getTheme = document.body.classList.contains("dark")
    return (
      <HomeDiv> 
        <div className="home__img">
 				<img
                     id="image"
-					src={props.storedTheme==='dark' ? introImgDark : introImgLight}
+					src={getTheme ? introImgDark : introImgLight}
 					alt="home_page"
 					className="__img"
 				/>

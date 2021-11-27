@@ -22,7 +22,7 @@ const App = () =>  {
     }
 },[storedTheme])
 
-console.log(storedTheme);
+
 
 
   return (
@@ -38,7 +38,7 @@ console.log(storedTheme);
                   <Chat/>
                  </Route>
                  <Route path='/home/rooms/'>
-                  <Home />
+                  <Home/>
                  </Route>
               </Switch>
              </Router>
