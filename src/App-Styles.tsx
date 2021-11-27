@@ -5,9 +5,15 @@ export const GlobalStyle = createGlobalStyle`
 
 .dark {
     --home-bg-body :  rgb(38, 45, 49);
+    --home-text : rgb(166, 168, 170);
+    --home-title :  rgba(241, 241, 242, 0.88);
+    --home-text-border : rgba(241, 241, 242, 0.11);
 }
 .light {
     --home-bg-body:  #f8f9fa;
+    --home-text : rgba(0, 0, 0, 0.45);
+    --home-title: #525252;
+    --home-text-border: rgba(74, 74, 74, 0.08);
 }
 
  body {

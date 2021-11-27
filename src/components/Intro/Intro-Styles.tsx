@@ -22,14 +22,14 @@ export const HomeDiv = styled.div`
     } 
 }
  .home__title {
-    color: #525252;
+    color: var(--home-title);
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .home__text {
-    color: rgba(0, 0, 0, 0.45);
+    color: var(--home-text);
     font-size: 0.85rem;
     font-weight: 500;
     max-width: 500px;
@@ -40,7 +40,7 @@ export const HomeDiv = styled.div`
 
 .home__text:first-of-type {
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(74, 74, 74, 0.08);
+    border-bottom: 1px solid var(--home-text-border);
 }
 
 /* .dark .home{
