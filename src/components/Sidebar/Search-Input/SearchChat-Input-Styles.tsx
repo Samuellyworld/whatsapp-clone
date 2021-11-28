@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SearchDiv = styled.div` 
  display:flex;
  align-items: center;
- background-color: #f6f6f6;
+ background-color: var(--sidebar-input-bg);
  height: 39px;
  padding : 10px;
 `
