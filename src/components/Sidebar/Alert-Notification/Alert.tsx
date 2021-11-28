@@ -14,7 +14,7 @@ const alerts =  [
 			<p className="sidebar__alert-text"> Turn on your notifications </p>
 		</div>
 	</AlertDiv>,
-	<AlertDiv className="sidebar__alert sidebar__alert--danger">
+	<AlertDiv className="sidebar__alert--danger">
 		<div className="sidebar__alert-icon-wrapper">
 			<NotificationOff className="sidebar__alert-icon" />
 		</div>
@@ -25,7 +25,7 @@ const alerts =  [
 			</p>
 		</div>
 	</AlertDiv>,
-	<AlertDiv className="sidebar__alert sidebar__alert--warning">
+	<AlertDiv className="sidebar__alert--warning">
 		<div className="sidebar__alert-icon-wrapper">
 			<Nowifi id="noWifi" className="sidebar__alert-icon" />
 		</div>
