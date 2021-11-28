@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 
 export const AlertDiv = styled.div` 
-    min-height: 85px;
+
+.sidebar__alert{
+    min-height: 20px;
     padding: 20px;
     display: flex;
     align-items: center;
-
+}
  .sidebar__alert--warning {
     background: #FED859;
 }

@@ -5,7 +5,8 @@ import Nowifi from '@material-ui/icons/SignalWifi0Bar';
 import {AlertDiv} from './Alert-Styles';
 
 const alerts =  [
-	<AlertDiv className="sidebar__alert--info">
+	<AlertDiv >
+     <div className="sidebar__alert sidebar__alert--info">
 		<div className="sidebar__alert-icon-wrapper">
 			<NotificationOff className="sidebar__alert-icon" />
 		</div>
@@ -13,8 +14,10 @@ const alerts =  [
 			<p className="sidebar__alert-text"> Get notified of new messages </p>
 			<p className="sidebar__alert-text"> Turn on your notifications </p>
 		</div>
+        </div>
 	</AlertDiv>,
-	<AlertDiv className="sidebar__alert--danger">
+	<AlertDiv>
+     <div className="sidebar__alert sidebar__alert--danger">
 		<div className="sidebar__alert-icon-wrapper">
 			<NotificationOff className="sidebar__alert-icon" />
 		</div>
@@ -24,8 +27,10 @@ const alerts =  [
 				Charge your phone to keep using Whatsapp.
 			</p>
 		</div>
+        </div>
 	</AlertDiv>,
-	<AlertDiv className="sidebar__alert--warning">
+	<AlertDiv>
+     <div className="sidebar__alert sidebar__alert--warning">
 		<div className="sidebar__alert-icon-wrapper">
 			<Nowifi id="noWifi" className="sidebar__alert-icon" />
 		</div>
@@ -43,6 +48,7 @@ const alerts =  [
 				</a>
 			</p>
 		</div>
+        </div>
 	</AlertDiv>,
 ];
 
