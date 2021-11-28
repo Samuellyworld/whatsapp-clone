@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-text : rgb(166, 168, 170);
     --home-title :  rgba(241, 241, 242, 0.88);
     --home-text-border : rgba(241, 241, 242, 0.11);
+    --sidebar-input : #323739;
  
 }
 .light {
@@ -15,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-text : rgba(0, 0, 0, 0.45);
     --home-title: #525252;
     --home-text-border: rgba(74, 74, 74, 0.08);
+    --sidebar-input: white;
 }
 
  body {
