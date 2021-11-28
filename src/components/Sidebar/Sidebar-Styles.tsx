@@ -21,6 +21,7 @@ export const SidebarHeaderIcon = styled.div`
   min-width: 10vw;
 
   > MuiSvgIcon-root {
+    color: grey !important;
     margin-right: 2vw;
     font-size: 24px !important;
   }
