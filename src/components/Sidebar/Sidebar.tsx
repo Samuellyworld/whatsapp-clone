@@ -9,6 +9,7 @@ import { Avatar, IconButton } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 
 import ChatIcon from '@material-ui/icons/Chat';
 import Options from '../Option-Dropdown/Options';
+import Alert from './Alert-Notification/Alert';
 
 import {firestore}  from '../../firebase/firebase';
 import {useStateValue} from '../../providers/user/user-provider';
@@ -63,7 +64,7 @@ return (
           </SidebarHeaderIcon>
          
         </SidebarHeaderDiv>
-    
+         <Alert/>
         <SearchChatInput searchChange={onSearchChatChange}/>
         <SidebarChats>
           <SidebarChat addNewChat/>
