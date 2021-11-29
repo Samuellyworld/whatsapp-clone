@@ -79,13 +79,13 @@ const SidebarChat = ({...props}) => {
         </SidebarChatInfo>) :
         (
         <Link to={`/home/rooms/${props.id}`}>
-            <SidebarChatDiv>
+            
                 <Avatar/>
                 <SidebarChatInfo>
                 <h2>{props.name}</h2>
                 <p>{lastMessages[0]?.message}</p>
             </SidebarChatInfo>
-            </SidebarChatDiv>
+
         </Link>
         )
         }

@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-input : #323739;
     --sidebar-input-bg : #131c21;
     --sidebar-header-border : gray;
+    --sidebar-bg : #131c21;
  
 }
 .light {
@@ -21,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-input: white;
     --sidebar-input-bg : #f6f6f6;
     --sidebar-header-border : lightgray;
+    --sidebar-bg : white;
 }
 
  body {

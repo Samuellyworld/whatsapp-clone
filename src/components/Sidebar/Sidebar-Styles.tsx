@@ -29,6 +29,6 @@ export const SidebarHeaderIcon = styled.div`
 
 export const SidebarChats = styled.div ` 
   flex: 1;
-  background-color: white;
+  background-color: var(--sidebar-bg);
   overflow-y: auto;
 ` 

@@ -17,12 +17,12 @@ export const SidebarChatDiv = styled.div`
 ` 
 
 export const SidebarChatInfo = styled.div` 
-   margin-left: 16px;
-   margin-top : -13px;
+   margin-left: 68px;
+   margin-top : -33px;
    
  >  h2 {
      font-size : 16px;
-     margin-bottom: 8px;
+     margin-top: 2px;
  }
  > h3 {
    cursor: pointer;
