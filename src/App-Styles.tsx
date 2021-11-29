@@ -4,7 +4,7 @@ import {createGlobalStyle} from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
 .dark {
-    --home-bg-body :  rgb(38, 45, 49);
+    --home-bg-body :  #2a2f32;
     --home-text : rgb(166, 168, 170);
     --home-title :  rgba(241, 241, 242, 0.88);
     --home-text-border : rgba(241, 241, 242, 0.11);
@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-input-bg : #131c21;
     --sidebar-header-border : gray;
     --sidebar-bg : #131c21;
+    --sidebar-border-bottom : #3c4247;
  
 }
 .light {
@@ -23,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-input-bg : #f6f6f6;
     --sidebar-header-border : lightgray;
     --sidebar-bg : white;
+    --sidebar-border-bottom : #f6f6f6;
 }
 
  body {

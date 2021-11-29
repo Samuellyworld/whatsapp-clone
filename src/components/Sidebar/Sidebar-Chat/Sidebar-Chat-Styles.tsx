@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const SidebarChatDiv = styled.div` 
   display : flex;
   padding : 10px;
-  border-bottom : 1px solid #f6f6f6;
+  border-bottom : 1px solid var(--sidebar-border-bottom);
+  overflow : auto;
 
   &:hover {
       background-color: #ebebeb;
@@ -26,6 +27,8 @@ export const SidebarChatInfo = styled.div`
  }
  > h3 {
    cursor: pointer;
+   overflow : hidden;
+
 
    &:hover {
      text-decoration: underline;
