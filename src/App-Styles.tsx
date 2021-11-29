@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-header-border : gray;
     --sidebar-bg : #131c21;
     --sidebar-border-bottom : #3c4247;
+    --sidebar-border-top : #242d32;
  
 }
 .light {
@@ -25,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-header-border : lightgray;
     --sidebar-bg : white;
     --sidebar-border-bottom : #f6f6f6;
+    --sidebar-border-top : #f6f6f6;
 }
 
  body {

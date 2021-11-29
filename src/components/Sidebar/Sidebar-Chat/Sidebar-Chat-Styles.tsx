@@ -28,6 +28,10 @@ export const SidebarChatInfo = styled.div`
  > h3 {
    cursor: pointer;
    overflow : hidden;
+   padding : 10px;
+   margin-left: -22px;
+   margin-top: 29px;
+    margin-bottom: 22px;
 
 
    &:hover {
@@ -38,9 +42,9 @@ export const SidebarChatInfo = styled.div`
    .up, .down {
      cursor: pointer;
      display : flex;
-      margin-left : 155px;
+      margin-left : 121px;
       color : gray;
-      margin-top: -40px;
+      margin-top: -54px;
    }
 
  >form {
@@ -52,6 +56,7 @@ export const SidebarChatInfo = styled.div`
       padding: 7px;
       color: gray;
       cursor: pointer;
+      margin-left : -50px;
   }
 
   > input {
