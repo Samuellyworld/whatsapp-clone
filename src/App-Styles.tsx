@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-text-border : rgba(241, 241, 242, 0.11);
     --sidebar-input : #323739;
     --sidebar-input-bg : #131c21;
+    --sidebar-header-border : gray;
  
 }
 .light {
@@ -19,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-text-border: rgba(74, 74, 74, 0.08);
     --sidebar-input: white;
     --sidebar-input-bg : #f6f6f6;
+    --sidebar-header-border : lightgray;
 }
 
  body {

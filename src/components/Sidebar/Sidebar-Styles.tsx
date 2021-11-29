@@ -11,7 +11,7 @@ export const SidebarHeaderDiv = styled.div`
   display : flex;
   justify-content: space-between;
   padding : 20px;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid var(--sidebar-header-border);
 ` 
 
 export const SidebarHeaderIcon = styled.div` 
