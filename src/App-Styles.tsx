@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {createGlobalStyle} from 'styled-components';
+import lightbg from './assets/white.png';
+import darkbg from './assets/dark.jpg';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -15,6 +17,8 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-border-bottom : #3c4247;
     --sidebar-border-top : #242d32;
     --sidebar-hover :  #2a2f32;
+    --chat-bg : url(${darkbg});
+    --chat-bg-color : rgb(13, 20, 24);
  
 }
 .light {
@@ -29,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-border-bottom : #f6f6f6;
     --sidebar-border-top : #f6f6f6;
     --sidebar-hover : #ebebeb;
+    --chat-bg : url(${lightbg});
 }
 
  body {
