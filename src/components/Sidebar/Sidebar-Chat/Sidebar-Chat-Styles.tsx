@@ -7,7 +7,7 @@ export const SidebarChatDiv = styled.div`
   overflow : auto;
 
   &:hover {
-      background-color: #ebebeb;
+      background-color: var(--sidebar-hover);
   }
 
   a {
