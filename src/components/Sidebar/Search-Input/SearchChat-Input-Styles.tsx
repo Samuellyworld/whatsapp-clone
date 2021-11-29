@@ -21,6 +21,7 @@ export const SearchContainer = styled.div `
 }
 > input {
     background-color: var(--sidebar-input);
+    color : var(--chat-footer-inputColor);
     border:  none;
     margin-left: 10px;
     outline-width: 0;

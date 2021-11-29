@@ -10,7 +10,7 @@ import {firestore} from '../../../firebase/firebase';
 import {useStateValue} from '../../../providers/user/user-provider';
 
 
-import { ChatFooterDiv, ChatInputForm } from './Chat-Styles';
+import { ChatFooterDiv, ChatInputForm } from './Chat-Footer-Styles';
 
 const ChatFooter = () => {
    const {roomId} = useParams();

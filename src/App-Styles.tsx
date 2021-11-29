@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     --chat-bg : url(${darkbg});
     --chat-footer-inputBg : #33383b;
     --chat-footer-inputColor : #f1f1f2;
- 
+    --sidebar-input :  #33383b;
 }
 .light {
     --home-bg-body:  #f8f9fa;
@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     --chat-bg : url(${lightbg});
     --chat-footer-inputBg : #fff;
     --chat-footer-inputColor : #4a4a4a;
+    --sidebar-input : whitesmoke;
 }
 
  body {

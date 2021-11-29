@@ -60,12 +60,13 @@ export const SidebarChatInfo = styled.div`
   }
 
   > input {
-      background-color: whitesmoke;
+      background-color: var(--sidebar-input);
       flex : 1;
       outline-width: 0;
       border-radius: 30px;
       padding: 10px;
       border: none;
+      color : var(--chat-footer-inputColor);
   }
 
   > button {
