@@ -18,7 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-border-top : #242d32;
     --sidebar-hover :  #2a2f32;
     --chat-bg : url(${darkbg});
-    --chat-bg-color : rgb(13, 20, 24);
+    --chat-footer-inputBg : #33383b;
+    --chat-footer-inputColor : #f1f1f2;
  
 }
 .light {
@@ -34,6 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     --sidebar-border-top : #f6f6f6;
     --sidebar-hover : #ebebeb;
     --chat-bg : url(${lightbg});
+    --chat-footer-inputBg : #fff;
+    --chat-footer-inputColor : #4a4a4a;
 }
 
  body {

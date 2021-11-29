@@ -5,7 +5,7 @@ export const ChatFooterDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid var(--home-bg-body);
 
   >.MuiSvgIcon-root {
       padding: 10px;
@@ -25,6 +25,8 @@ export const ChatInputForm = styled.form`
       border-radius: 30px;
       padding: 10px;
       border: none;
+      background : var(--chat-footer-inputBg);
+      color : var(--chat-footer-inputColor);
   }
 
   > button {
