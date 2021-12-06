@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
     --chat-bg : url(${lightbg});
     --chat-footer-inputBg : #fff;
     --chat-footer-inputColor : #4a4a4a;
-    --sidebar-input : whitesmoke;
+    --sidebar-input : white;
     --sidebar-color: rgba(0, 0, 0);
 }
 

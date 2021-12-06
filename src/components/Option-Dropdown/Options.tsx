@@ -44,7 +44,7 @@ const Options = () => {
          <ul>
              <li>Profile</li>
              <li>
-                {  themeModeName ||  ` ${getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)} Mode  ` }
+                {themeModeName  ||  ` ${getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)} Mode  ` }
                 <label className='theme-switch'>
                  <input type="checkbox" id="checkbox" onChange={switchTheme}/>
                  <div className='slider round'></div>

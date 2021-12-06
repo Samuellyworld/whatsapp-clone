@@ -28,7 +28,7 @@ export const OptionsDiv = styled.div`
         cursor: pointer;
 
         &:hover {
-            background: #f5f5f5;
+            text-decoration: underline;
         }
         &:last-child {
             margin-top: -26px;
