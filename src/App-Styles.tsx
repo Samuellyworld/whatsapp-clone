@@ -21,7 +21,8 @@ export const GlobalStyle = createGlobalStyle`
     --chat-footer-inputBg : #33383b;
     --chat-footer-inputColor : #f1f1f2;
     --sidebar-input :  #33383b;
-    --sidebar-color: rgba(241,241,242,.92)
+    --sidebar-color: rgba(241,241,242,.92);
+    --add-newChat-color : #056162;
 }
 .light {
     --home-bg-body:  #f8f9fa;

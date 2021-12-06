@@ -23,7 +23,7 @@ export const SidebarChatInfo = styled.div`
    margin-top : -33px;
    
  > .header {
-     font-size : 17px;
+     font-size : 19px;
      margin-top: 2px;
  }
  > h3 {
@@ -33,7 +33,7 @@ export const SidebarChatInfo = styled.div`
    margin-left: -22px;
    margin-top: 29px;
     margin-bottom: 22px;
-    color: var(--sidebar-color);
+    color: var(--add-newChat-color);
 
 
    &:hover {
