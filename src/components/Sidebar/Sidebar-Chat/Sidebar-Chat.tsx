@@ -80,11 +80,11 @@ const SidebarChat = ({...props}) => {
         (
         <Link to={`/home/rooms/${props.id}`}>
             
-                <Avatar/>
+               <Avatar/>
                 <SidebarChatInfo>
-                <h2>{props.name}</h2>
-                <p>{lastMessages[0]?.message}</p>
-            </SidebarChatInfo>
+                 <p className="header">{props.name}</p>
+                 <p>{lastMessages[0]?.message}</p>
+               </SidebarChatInfo>
 
         </Link>
         )
