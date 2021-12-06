@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     --home-title: #525252;
     --home-text-border: rgba(74, 74, 74, 0.08);
     --sidebar-input: white;
-    --sidebar-input-bg : #f6f6f6;
+    --sidebar-input-bg : #f5eeee;
     --sidebar-header-border : lightgray;
     --sidebar-bg : white;
     --sidebar-border-bottom : #f6f6f6;

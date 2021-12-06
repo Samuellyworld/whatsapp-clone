@@ -24,7 +24,7 @@ export const SidebarChatInfo = styled.div`
    
  > .header {
      font-size : 19px;
-     margin-top: 2px;
+     margin-top: 0px;
  }
  > h3 {
    cursor: pointer;
