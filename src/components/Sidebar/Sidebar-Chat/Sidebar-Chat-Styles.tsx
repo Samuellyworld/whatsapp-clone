@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+
 export const SidebarChatDiv = styled.div` 
   display : flex;
   padding : 10px;
@@ -25,6 +27,7 @@ export const SidebarChatInfo = styled.div`
  > .header {
      font-size : 19px;
      margin-top: 0px;
+     font-family: 'Roboto', sans-serif;
  }
  > h3 {
    cursor: pointer;
