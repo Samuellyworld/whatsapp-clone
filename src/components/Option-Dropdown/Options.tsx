@@ -9,7 +9,7 @@ const Options = () => {
 
     const[themeModeName, setThemeModeName] = React.useState("")
     
- const switchTheme = (event) => {
+ const switchTheme = (event: { target: { checked: any; }; }) => {
     if(event.target.checked) {
             document.body.setAttribute('class', 'dark');
             localStorage.setItem('theme', 'dark');
@@ -27,6 +27,16 @@ const Options = () => {
 
     const getThemeNameOnLoad: any = document.body.getAttribute("class");
 
+
+    React.useEffect(() => {
+        if(getThemeNameOnLoad === "dark") {
+            const checkbox : any= document.getElementById("checkbox");
+            checkbox.checked = true;
+        }
+    }, [getThemeNameOnLoad])
+   
+     
+
  
 
     return (
@@ -36,7 +46,7 @@ const Options = () => {
              <li>
                 {  themeModeName ||  ` ${getThemeNameOnLoad?.charAt(0).toUpperCase() + getThemeNameOnLoad?.slice(1)} Mode  ` }
                 <label className='theme-switch'>
-                 <input type="checkbox" onChange={switchTheme}/>
+                 <input type="checkbox" id="checkbox" onChange={switchTheme}/>
                  <div className='slider round'></div>
                 </label> 
 
