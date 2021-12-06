@@ -12,7 +12,7 @@ export const SidebarChatDiv = styled.div`
 
   a {
     text-decoration : none !important;
-    color: black;
+    color: var(--sidebar-color);
   }
 
 ` 

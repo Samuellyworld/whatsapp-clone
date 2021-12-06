@@ -44,11 +44,11 @@ const filteredChatRoom = rooms.filter(room => {
 })
 
 console.log(rooms, 'room');
-console.log(user.photoURL, 'user');
+console.log(user.photoURL, 'user photo');
 return (
       <SidebarDiv>
         <SidebarHeaderDiv>
-        <Avatar src={user?.photoURL}/>
+        <Avatar src={user.photoURL}/>
           <SidebarHeaderIcon>
               <IconButton>
               <RefreshIcon style={{ color: 'grey' }}/>
